@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello <span id="userName"></span></h1>
+    <button onclick="showAlert()">Show Alert</button>
+    <button onclick="surprise()">Click me to suprise</button>
+<pre>
+    1. Output 
+        1. getElementsById
+        2. alert
+        3. console.log()
+        4. write()
+    2.Input
+        1. input / select-option / textarea
+        2. prompt()
+</pre>
+
+<hr>
+
+<input type="text" id="cityName" value="PUNE">
+<button onclick="showCity()">Show City Name</button>
+<p id="paraDemo"></p>
+<script>
+    function showCity(){
+        cName=document.getElementById("cityName").value 
+        document.getElementById("paraDemo").textContent = "Your city is " + cName
+    }
+</script>
+    
+    
+    
+    <script>
+
+        function showAlert(){
+            alert("Hello from alert")
+        }
+        console.log("***Hello from console.....****")
+        document.write("######Hello from document write######")
+        function surprise(){
+            document.write("HA HA HA ALL CLEAR")
+        }
+        
+   </script>
+   <script>
+    function getUser(){
+        uName = prompt("Enter Name")
+
+        document.getElementById("userName").textContent = uName
+    }
+    getUser()
+   </script>
+    <script src="./firstprogram.js"></script>
+</body>
+</html>

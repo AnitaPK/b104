@@ -1,0 +1,68 @@
+:root{
+    --whiteColor : #FFFFFF;
+    --blackColor : #000;
+    --paraFontSize : 16px
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+.InquirySection{
+    background-image: url('./assets/323_rectangle.png');
+    height: 776px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 2rem;
+}
+.InquirySection .content{
+    color: var(--whiteColor);
+    flex:2;
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+padding: 3rem;
+}
+.content .heading{
+    font-size: 57px;
+}
+.content .secOne{
+
+}
+.content .secOne h4{
+    font-size: 45px;
+}
+.content .secOne h5{
+    font-size: 40px;
+}
+.content .secOne p{
+    font-size: var(--paraFontSize);
+}
+.InquirySection .formSec{
+    flex:1
+}
+
+.formSec{
+    background-color: var(--whiteColor);
+    width: 384px;
+    border-radius: 16px;
+    padding: 2rem;
+}
+hr{
+    margin: 1.5rem 0;
+}
+.formSec h3{
+    font-size: 20.7px;
+}
+.formLable{
+
+}
+
+.formSec input, .formSec textarea{
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+}
